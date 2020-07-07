@@ -1,0 +1,16 @@
+1.  Write tests for all business code
+2.  Implement client-server connection
+3.  Ensure that the stake amount entered by user is validated on the client side
+4.  Configure timezone in docker container to GMT+1
+5.  Implement bookmakers Smarket, Pinnacle
+6.  Enable that every bookmaker class can pass the index of matcher.group(index) pertaining to their website
+7.  Util should contain an abstraction that records the non-found market that have their regex within the bookmaker's market list. This would help to detect any structural change in bookmakers site that might have cause the regex to be incompatible with the resulting change
+8.  Take care of memory consumption that is associated with Integer wrapping in  bookmakers market classes
+
+
+
+
+
+
+
+

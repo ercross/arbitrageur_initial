@@ -1,2 +1,462 @@
 2020-07-06 16:55:24,302 	 ERROR 	 EventsFetcher [main] 	 Bet9ja: Unable to communicate with Browser
+ 	 2020-07-12 03:19:30,042 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-12 03:19:30,328 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-12 03:19:30,353 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click ENGLAND on soccer page
+ 	 2020-07-12 03:19:30,460 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: ENGLAND element not found
+ 	 2020-07-12 03:19:30,460 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-12 03:19:30,672 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-12 03:19:30,672 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the Wolves - Everton on Premier League page
+ 	 2020-07-12 03:19:30,713 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Wolves - Everton']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.8d1zCC}, goog:chromeOptions: {debuggerAddress: localhost:44267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 733b69004a96c6113f43ce6c267538c4
+*** Element info: {Using=xpath, value=//p[text()='Wolves - Everton']}
+ 	 2020-07-17 16:36:31,755 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 16:36:31,819 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.PUzFPO}, goog:chromeOptions: {debuggerAddress: localhost:36475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6581a5d5fe8f9066ac21a365abdb0070
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-17 16:36:31,821 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click ENGLAND on soccer page
+ 	 2020-07-17 16:36:31,846 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: ENGLAND element not found
+ 	 2020-07-17 16:36:31,847 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 16:36:31,867 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 16:36:31,867 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 16:36:31,887 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.PUzFPO}, goog:chromeOptions: {debuggerAddress: localhost:36475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6581a5d5fe8f9066ac21a365abdb0070
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 16:38:14,424 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 16:38:30,031 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[a[span[contains(text(),'FOOTBALL')]]]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+ 	 2020-07-17 16:38:30,034 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click ENGLAND on soccer page
+ 	 2020-07-17 16:45:27,970 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 16:45:28,179 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 16:45:28,198 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click ENGLAND on soccer page
+ 	 2020-07-17 16:45:28,241 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: ENGLAND element not found
+ 	 2020-07-17 16:45:28,242 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 16:45:28,287 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 16:45:28,288 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 16:45:28,319 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.Shz4MC}, goog:chromeOptions: {debuggerAddress: localhost:34055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 44e3bb9ee7a57c5b6625e9c3a4d0fa6f
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 16:48:03,274 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 16:48:03,532 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 16:48:03,601 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click England on soccer page
+ 	 2020-07-17 16:48:03,696 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: England element not found
+ 	 2020-07-17 16:48:03,697 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 16:48:03,757 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 16:48:03,759 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 16:48:03,969 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.Eq879A}, goog:chromeOptions: {debuggerAddress: localhost:34395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1a1e0f1c86bcf21181a8c622c758b33d
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 17:57:51,609 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 17:57:51,833 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 17:57:51,844 	 ERROR 	 NairabetMarketsFetcher [main] 	 Bet9ja: This element was not foundorg.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+ 	 2020-07-17 18:09:42,599 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:09:42,882 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:09:43,234 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:09:43,310 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:09:43,310 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:09:43,354 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.WhwwSw}, goog:chromeOptions: {debuggerAddress: localhost:45449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f2ee4c0664f89b6ebc630ea7e1dae72
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:13:26,583 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:13:26,754 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:13:26,852 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:13:26,934 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:13:26,935 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:13:26,977 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.53lhQf}, goog:chromeOptions: {debuggerAddress: localhost:35429}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b7d6c01660ce5ff28fd34f3794e4e886
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:22:25,094 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:22:25,355 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:22:25,405 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:22:25,451 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:22:25,451 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:22:25,502 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.w4fwz0}, goog:chromeOptions: {debuggerAddress: localhost:39809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2c19cc31b42eca956e77074032840e96
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:25:40,520 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:25:40,749 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:25:41,163 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:25:41,202 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:25:41,202 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:25:41,225 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.oeTa1V}, goog:chromeOptions: {debuggerAddress: localhost:43321}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 95e1098e6f45c86158a99bcfa56a3f7a
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:36:21,853 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:36:22,253 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:36:22,271 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found[Ljava.lang.StackTraceElement;@55795845
+ 	 2020-07-17 18:38:49,464 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:38:50,501 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:38:50,514 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 2020-07-17 18:52:09,621 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:52:09,969 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:52:10,029 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 2020-07-17 18:54:33,437 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:54:33,668 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:54:40,764 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:54:40,853 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:54:40,854 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:54:40,906 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.klnBOj}, goog:chromeOptions: {debuggerAddress: localhost:41037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 59da570449c0dbc70b1a575edfb7ede4
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:56:06,976 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:56:07,391 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:56:07,447 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:56:07,490 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:56:07,490 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:56:07,522 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.Lh1FGe}, goog:chromeOptions: {debuggerAddress: localhost:40793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1e673b6c9988593ccd5acee13282d77
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:57:54,826 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:57:55,183 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:57:55,235 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:57:55,298 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:57:55,299 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:57:55,347 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.BpbENb}, goog:chromeOptions: {debuggerAddress: localhost:35253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d371b9331b6ef6cc7bb4ad690a722e47
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 18:59:33,250 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 18:59:33,513 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 18:59:33,825 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 18:59:33,897 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 18:59:33,897 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 18:59:33,937 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.W1J7q7}, goog:chromeOptions: {debuggerAddress: localhost:37551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2bd55804cd8dfc5031012878c6bc49cd
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 19:00:51,918 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 19:00:52,105 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 19:00:52,156 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 19:00:52,222 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 19:00:52,223 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 19:00:52,262 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.1OvIkN}, goog:chromeOptions: {debuggerAddress: localhost:38051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aca3f8e3c4250d11c3fb11c795f3f6fe
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 19:07:48,772 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 19:07:49,057 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-17 19:07:49,155 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-17 19:07:49,224 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-17 19:07:49,224 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-17 19:07:49,262 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.gEacWO}, goog:chromeOptions: {debuggerAddress: localhost:39311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61d4f355564acba5c5fb60d9a874a3bc
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-17 19:09:04,833 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-17 19:09:12,481 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[a[span[contains(text(),'FOOTBALL')]]]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+ 	 2020-07-23 10:08:26,765 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-07-23 10:10:02,775 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-07-23 10:20:56,325 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 10:20:56,382 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.tFqEXO}, goog:chromeOptions: {debuggerAddress: localhost:36511}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 329fb48c1a5a17d856b6f83d7f9c0039
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 10:20:56,417 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 10:20:56,440 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 10:20:56,440 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 10:20:56,461 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.tFqEXO}, goog:chromeOptions: {debuggerAddress: localhost:36511}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 329fb48c1a5a17d856b6f83d7f9c0039
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 10:25:29,695 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 10:25:29,751 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.cY2RyP}, goog:chromeOptions: {debuggerAddress: localhost:35581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 187d4edfef4cbf5b36000c037d16f484
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 10:25:29,784 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 10:25:29,807 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 10:25:29,807 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 10:25:29,836 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.cY2RyP}, goog:chromeOptions: {debuggerAddress: localhost:35581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 187d4edfef4cbf5b36000c037d16f484
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 10:27:04,761 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-07-23 10:27:55,256 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 10:27:55,311 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.jzYklh}, goog:chromeOptions: {debuggerAddress: localhost:39777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 15ec0fb13c96c9385a91c4f3013d0933
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 10:27:55,340 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 10:27:55,362 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 10:27:55,362 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 10:27:55,389 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.jzYklh}, goog:chromeOptions: {debuggerAddress: localhost:39777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 15ec0fb13c96c9385a91c4f3013d0933
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 10:30:23,624 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 10:30:23,687 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='VerticalSportList__Name-zv6yg9-4 fYZPUO'][contains(text(),'FOOTBALL')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.IMHQDJ}, goog:chromeOptions: {debuggerAddress: localhost:38377}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b03c5c20eb03f611c420be685cd6c653
+*** Element info: {Using=xpath, value=//span[@class='VerticalSportList__Name-zv6yg9-4 fYZPUO'][contains(text(),'FOOTBALL')]}
+ 	 2020-07-23 10:30:23,751 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 10:30:23,773 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 10:30:23,773 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 10:30:23,794 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.IMHQDJ}, goog:chromeOptions: {debuggerAddress: localhost:38377}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b03c5c20eb03f611c420be685cd6c653
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 11:19:51,924 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 11:19:52,058 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.5HD4vC}, goog:chromeOptions: {debuggerAddress: localhost:38385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bb091f22ba8172f5fd02df3059008751
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 11:19:52,123 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 11:19:52,182 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 11:19:52,182 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 11:19:52,211 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.5HD4vC}, goog:chromeOptions: {debuggerAddress: localhost:38385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bb091f22ba8172f5fd02df3059008751
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 11:42:10,293 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 11:42:10,712 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-07-23 11:42:10,743 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 11:42:10,774 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 11:42:10,774 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 11:42:10,795 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.82YOOn}, goog:chromeOptions: {debuggerAddress: localhost:36287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 76752e62efbdf85a40280c7a8cf6fc61
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 11:59:59,473 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 11:59:59,517 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.9ErhFW}, goog:chromeOptions: {debuggerAddress: localhost:45457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd25dee6133254b44395e4cd84d0537e
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 11:59:59,545 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 11:59:59,573 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 11:59:59,573 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 11:59:59,606 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.9ErhFW}, goog:chromeOptions: {debuggerAddress: localhost:45457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd25dee6133254b44395e4cd84d0537e
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 12:02:26,076 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 12:02:26,120 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='VerticalSportList__Name-zv6yg9-4 fYZPUO'][contains(text(),'FOOTBALL')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.1NzKl7}, goog:chromeOptions: {debuggerAddress: localhost:42085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f878b3df1df3d8a83185cf0f42b3fa0f
+*** Element info: {Using=xpath, value=//span[@class='VerticalSportList__Name-zv6yg9-4 fYZPUO'][contains(text(),'FOOTBALL')]}
+ 	 2020-07-23 12:02:26,147 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 12:02:26,434 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 12:02:26,435 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 12:02:26,486 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.1NzKl7}, goog:chromeOptions: {debuggerAddress: localhost:42085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f878b3df1df3d8a83185cf0f42b3fa0f
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 14:39:49,862 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 14:39:50,130 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.kTmw8V}, goog:chromeOptions: {debuggerAddress: localhost:41525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c9d4f75a545c63a4c7359388bf23a8d9
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 14:39:50,257 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on Premier League
+ 	 2020-07-23 14:39:50,559 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Premier League element not found
+ 	 2020-07-23 14:39:50,560 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click the West Ham-Watford on Premier League page
+ 	 2020-07-23 14:39:50,584 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not foundorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='West Ham-Watford']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.kTmw8V}, goog:chromeOptions: {debuggerAddress: localhost:41525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c9d4f75a545c63a4c7359388bf23a8d9
+*** Element info: {Using=xpath, value=//p[text()='West Ham-Watford']}
+ 	 2020-07-23 23:33:55,838 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 23:33:56,081 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.rzsp66}, goog:chromeOptions: {debuggerAddress: localhost:37421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 862b278c04aa4b74ab4238fffe9e6fc3
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-07-23 23:33:56,157 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 2020-07-23 23:37:25,523 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-07-23 23:37:25,601 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='VerticalSportList__Name-zv6yg9-4 fYZPUO'][contains(text(),'FOOTBALL')]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.Mfpo1Z}, goog:chromeOptions: {debuggerAddress: localhost:46591}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7317ba3a0728167ebc6c12ac3bba5136
+*** Element info: {Using=xpath, value=//span[@class='VerticalSportList__Name-zv6yg9-4 fYZPUO'][contains(text(),'FOOTBALL')]}
+ 	 2020-07-23 23:37:25,631 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 2020-07-23 23:39:58,553 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-07-23 23:58:48,758 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-07-23 23:59:48,829 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-07-24 00:00:48,928 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
  	 

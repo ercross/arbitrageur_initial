@@ -1,6 +1,5 @@
-package com.ercross.arbitrageur.controller.fetchers;
+package com.ercross.arbitrageur.fetcher;
 
-import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -17,15 +16,11 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ercross.arbitrageur.model.Event;
 import com.ercross.arbitrageur.model.Event.SportType;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * @author Ercross
@@ -37,12 +32,16 @@ public class EventsFetcher implements Fetchable, Callable<List<Event>> {
     private static final Logger LOG = LogManager.getLogger("EventsFetcher.class");
 
     private final SportType sportType;
-    public List<Event> todaysEvents = new ArrayList<Event>();
     private final LocalDate date;
     private final static String eventsDivSelector = "//div[@class='event']";
 
     //driver initialization not invoked within the class to synchronize access to the shared property
     private static WebDriver driver;
+
+    public EventsFetcher() {
+        sportType = null;
+        date = null;
+    }
 
     public EventsFetcher(SportType sportType) {
         this.sportType = sportType;
@@ -58,29 +57,20 @@ public class EventsFetcher implements Fetchable, Callable<List<Event>> {
     @Override
     public List<Event> call() throws Exception {
         fetch();
-        return todaysEvents;
+        return (List<Event>) fetch();
     }
 
     @Override
-    public void fetch () {
+    public Object fetch () {
+        List<Event> todaysEvents = new ArrayList<>();
         String sportTypeUrl = prepareSportTypeUrl();
         navigateToSportTypePage(sportTypeUrl);
         findEventsByDate(this.date);
         String scrapedPage = scrapeEventsDiv();
         sortScrapedEventsPage(scrapedPage);
         Fetchable.tearDownWebDriver(EventsFetcher.driver);
+        return todaysEvents;
     }
-
-    //flashscore.com autoreloads, arg "disable-offline-auto-reload" disables that
-    public static WebDriver initializeDriver() {
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeSettings = new ChromeOptions();
-        chromeSettings.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
-        chromeSettings.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors", "--silent", "--disable--notifications");
-        chromeSettings.addArguments("--disable-offline-auto-reload");
-        return new ChromeDriver(chromeSettings);
-    }
-
 
     //flashscore.com organize their web directories as flashscore.com/sportType. This method simply concatenates sportType to the base address
     private String prepareSportTypeUrl() {
@@ -153,8 +143,9 @@ public class EventsFetcher implements Fetchable, Callable<List<Event>> {
     private static final Pattern HEADER_INFO_PATTERN= Pattern.compile(EVENT_HEADER_INFO, Pattern.MULTILINE);
 
     //this pattern contains:- eventTime HomeTeamName - awayTeamName
+    //The non-grouped string between group2 and group3 accounts for the occasional hyphen between team names. Sometimes, its there, sometimes not
     //***************************************************matcher.group(1)**************matcher.group(2)*********************************matcher.group(3)
-    private static final String EVENT_SPECIFIC_INFO = "([0-9]+:[0-9]+)\\n" + "([A-Za-z0-9 ]+[A-Za-z0-9 ]*)\\n" + "([A-Za-z0-9 ]+[A-Za-z0-9 ]*)\\n";
+    private static final String EVENT_SPECIFIC_INFO = "([0-9]+:[0-9]+)\\n" + "([A-Za-z0-9 ]+[A-Za-z0-9() ]*)\\n" + "[[-]*\\n]*" + "([A-Za-z0-9 ]+[A-Za-z0-9() ]*)\\n";
     private static final Pattern EVENT_SPECIFIC_INFO_PATTERN = Pattern.compile(EVENT_SPECIFIC_INFO, Pattern.MULTILINE);
 
 
@@ -166,11 +157,11 @@ public class EventsFetcher implements Fetchable, Callable<List<Event>> {
         Matcher headerInfoMatcher;
         Matcher eventSpecificInfoMatcher;
 
-        String eventCountry = new String();
-        String leagueName = new String();
+        String eventCountry = "";
+        String leagueName = "";
 
-        List<String> lines = prepareEventInfo(scrapedEventPage);
-
+        final List<String> lines = prepareEventInfo(scrapedEventPage);
+        final List<Event> todaysEvents =  new ArrayList<>();
         for(String line: lines) {
             headerInfoMatcher = HEADER_INFO_PATTERN.matcher(line);
             eventSpecificInfoMatcher = EVENT_SPECIFIC_INFO_PATTERN.matcher(line);
@@ -180,18 +171,28 @@ public class EventsFetcher implements Fetchable, Callable<List<Event>> {
                 leagueName = headerInfoMatcher.group(2);
             } else if (eventSpecificInfoMatcher.find()) {
                 Event event = new Event.EventBuilder()
-                        .setEventCountry(eventCountry)
+                        .setEventCountry(toSentenceCase(eventCountry))
                         .setLeagueName(leagueName)
                         .setEventTime(LocalTime.parse(eventSpecificInfoMatcher.group(1)))
-                        .setEventName(eventSpecificInfoMatcher.group(2) + " - " + eventSpecificInfoMatcher.group(3))
+                        .setEventName(eventSpecificInfoMatcher.group(2) + "-" + eventSpecificInfoMatcher.group(3))
                         .setHomeTeamName(eventSpecificInfoMatcher.group(2))
                         .setAwayTeamName(eventSpecificInfoMatcher.group(3))
                         .setSportType(this.sportType)
                         .build();
-                this.todaysEvents.add(event);
+                todaysEvents.add(event);
             }
         }
-        return this.todaysEvents;
+        return todaysEvents;
+    }
+
+    //The country name scraped from flashscore.com is in uppercase. This method converts to sentence case, the case used on most bookmakers' website
+    private static String toSentenceCase (String word){
+        Character firstLetter = word.charAt(0);
+        String sentenceCasedWord = word.toLowerCase();
+        StringBuilder build = new StringBuilder(sentenceCasedWord);
+        build.replace(0,1,firstLetter.toString());
+        sentenceCasedWord = build.toString();
+        return sentenceCasedWord;
     }
 
     /*
@@ -222,7 +223,7 @@ public class EventsFetcher implements Fetchable, Callable<List<Event>> {
      */
     private List<String> conjuctEventInfo (List<String> lines) {
         StringBuilder info = new StringBuilder();
-        List<String> eventInfo = new ArrayList<String>();
+        List<String> eventInfo = new ArrayList<>();
         for (int j=0; j<lines.size();) {
             for(int i=0; i<3;i++,j++) {
                 if (j == lines.size())

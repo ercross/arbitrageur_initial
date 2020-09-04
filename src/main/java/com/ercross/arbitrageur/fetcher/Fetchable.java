@@ -1,8 +1,11 @@
-package com.ercross.arbitrageur.controller.fetchers;
+package com.ercross.arbitrageur.fetcher;
 
 import com.ercross.arbitrageur.adt.UrlTreeMap;
 import com.ercross.arbitrageur.adt.exceptions.NodeNotFoundException;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 /**
  * @author ercross
@@ -18,9 +21,25 @@ import org.openqa.selenium.WebDriver;
  * 3. Scrape the event's markets section on the event page in private scrapeEventPage
  * 4. Extract markets found in the scraped page using util.MarketExtraction.extractMarket() using fetch()
  * 5. Add a reloadUrlTree in Main.clearAllUrlTrees();
+ * 6. add its mapper to NameReplacer.java using mappers.put("BookmakerName", loadMapperContent("BookmakerName"));
  */
 
 public interface Fetchable {
+
+    //This configuration aligns well with what most bookmakers' websites needed.
+    //custom implementation can be made by overriding this in the implementing class
+    default WebDriver initWebDriver() {
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions chromeSettings = new ChromeOptions();
+        chromeSettings.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
+        chromeSettings.addArguments("--disable-gpu");
+        chromeSettings.addArguments("--headless");
+        chromeSettings.addArguments("--ignore-certificate-errors");
+        chromeSettings.addArguments("--silent");
+        chromeSettings.addArguments("--disable--notifications");
+        chromeSettings.addArguments("--disable-offline-auto-reload");
+        return new ChromeDriver(chromeSettings);
+    }
 
     //Used in classes that uses selenium webdriver to set preclose and close operations on the driver
     public static void tearDownWebDriver(WebDriver driver) {
@@ -37,5 +56,5 @@ public interface Fetchable {
      * fetches the needed resource (specified in the class name) from a target webpage and stores them in appropriate class instance data structures.
      * All parameters needed are supplied as class instances and unique for each implementing class
      */
-    public void fetch();
+    Object fetch();
 }

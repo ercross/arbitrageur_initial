@@ -6,8 +6,13 @@
 6.  Enable that every bookmaker class can pass the index of matcher.group(index) pertaining to their website
 7.  Util should contain an abstraction that records the non-found market that have their regex within the bookmaker's market list. This would help to detect any structural change in bookmakers site that might have cause the regex to be incompatible with the resulting change
 8.  Take care of memory consumption that is associated with Integer wrapping in  bookmakers market classes
-
-
+9.  record not found team names to map.yaml files in resources recordTeamNameToMap(), checkMatchingTeamNameInMap()
+10. Cache browsers to reduce the time wasted when configuring and opening up a new browser instance
+11. In main, add implementation to persist mapper maps to file before crash
+12. Synchronize mappers
+13. Ensure each url tree is persisted before any app crash
+14. Pass -ea argument to JVM commandline to enable assertions
+15. Check the log and rewrite log messages. No need to add bookmaker name in log messages. Logs messages should detail app workings
 
 
 

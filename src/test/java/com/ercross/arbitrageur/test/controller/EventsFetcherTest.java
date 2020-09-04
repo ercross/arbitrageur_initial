@@ -6,11 +6,10 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.ercross.arbitrageur.controller.fetchers.EventsFetcher;
+import com.ercross.arbitrageur.fetcher.EventsFetcher;
 import com.ercross.arbitrageur.model.Event;
 import com.ercross.arbitrageur.model.Event.SportType;
 

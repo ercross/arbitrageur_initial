@@ -21,9 +21,10 @@ public class DataValidator {
     }
 
     public static void validate(double argOne, double argTwo, String culprit) throws ZeroValueArgumentException{
-        if (argOne == 0.0 | argTwo == 0.0)
+        if (argOne == 0.0 | argTwo == 0.0) {
             LOG.error("Invalid odd supplied by: " + culprit);
-        throw new ZeroValueArgumentException();
+            throw new ZeroValueArgumentException();
+        }
     }
 
     /**
@@ -33,9 +34,10 @@ public class DataValidator {
      * @throws ZeroValueArgumentException
      */
     public static void validate(String arg) throws ZeroValueArgumentException{
-        if (arg == null)
+        if (arg == null) {
             //TODO use culprit as in above log message
-            LOG.error("Invalid String supplied by: " );
-        throw new ZeroValueArgumentException();
+            LOG.error("Invalid String supplied by: ");
+            throw new ZeroValueArgumentException();
+        }
     }
 }

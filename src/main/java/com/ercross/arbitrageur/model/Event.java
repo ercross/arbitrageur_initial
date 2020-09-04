@@ -5,13 +5,13 @@ import java.time.LocalTime;
 public class Event {
 
     public enum SportType {
-        HOCKEY("hockey"), SOCCER("soccer"), BASKETBALL("basketball"), TENNIS("tennis"),
-        BOXING("boxing"), TABLE_TENNIS("table-tennis"), AUSSIE_RULES("aussie-rules"), RUGBY("rugby"),
-        AMERICAN_FOOTBALL("american-football"), VOLLEYBALL("volleyball"), MOTOR_SPORT("motor-sport");
+        HOCKEY("Hockey"), SOCCER("Soccer"), BASKETBALL("Basketball"), TENNIS("Tennis"),
+        BOXING("Boxing"), TABLE_TENNIS("Table-tennis"), AUSSIE_RULES("Aussie-Rules"), RUGBY("Rugby"),
+        AMERICAN_FOOTBALL("American-Football"), VOLLEYBALL("Volleyball"), MOTOR_SPORT("Motor-sport");
 
-        private String value;
+        final private String value;
 
-        private SportType(String value) {
+        SportType(String value) {
             this.value = value;
         }
 
@@ -56,6 +56,17 @@ public class Event {
         return leagueName;
     }
 
+    public void setHomeTeamName(String homeTeamName) {
+        this.homeTeamName = homeTeamName;
+    }
+
+    public void setAwayTeamName(String awayTeamName) {
+        this.awayTeamName = awayTeamName;
+    }
+
+    public void setEventCountry(String eventCountry) {
+        this.eventCountry = eventCountry;
+    }
 
     @Override
     public String toString() {

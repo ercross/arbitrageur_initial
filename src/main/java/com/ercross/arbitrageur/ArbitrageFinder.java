@@ -1,4 +1,4 @@
-package com.ercross.arbitrageur.controller;
+package com.ercross.arbitrageur;
 
 import static com.ercross.arbitrageur.util.DataValidator.validate;
 

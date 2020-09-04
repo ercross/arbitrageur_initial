@@ -1,11 +1,10 @@
 package com.ercross.arbitrageur;
 
-import com.ercross.arbitrageur.controller.fetchers.Bet9jaMarketsFetcher;
-import com.ercross.arbitrageur.controller.fetchers.NairabetMarketsFetcher;
+import com.ercross.arbitrageur.fetcher.bookmaker.bet9ja.Bet9jaMarketsFetcher;
+import com.ercross.arbitrageur.fetcher.bookmaker.nairabet.NairabetMarketsFetcher;
 import com.ercross.arbitrageur.model.Arbitrage;
 import com.ercross.arbitrageur.model.Event;
 import com.ercross.arbitrageur.model.Market;
-import com.ercross.arbitrageur.controller.ArbitrageFinder;
 import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;

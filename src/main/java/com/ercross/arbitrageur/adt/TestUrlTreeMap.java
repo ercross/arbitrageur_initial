@@ -18,7 +18,7 @@ public class TestUrlTreeMap {
     @Test
     public void testIsContains() throws NodeNotFoundException {
         urlTreeMap.add(null, "Sport", newSportTypeNode);
-        boolean actualResult = urlTreeMap.isContains("Soccer", "Soccer");
+        boolean actualResult = urlTreeMap.contains("Soccer", "Soccer");
         assertTrue(actualResult);
     }
 

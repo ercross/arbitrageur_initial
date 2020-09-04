@@ -6,15 +6,18 @@ import java.util.*;
 import java.util.concurrent.*;
 
 import com.ercross.arbitrageur.adt.exceptions.NodeNotFoundException;
-import com.ercross.arbitrageur.controller.fetchers.Bet9jaMarketsFetcher;
-import com.ercross.arbitrageur.controller.fetchers.Fetchable;
+import com.ercross.arbitrageur.fetcher.bookmaker.bet9ja.Bet9jaMarketsFetcher;
+import com.ercross.arbitrageur.fetcher.Fetchable;
+import com.ercross.arbitrageur.fetcher.bookmaker.bet9ja.Bet9jaPageNavigator;
+import com.ercross.arbitrageur.fetcher.bookmaker.nairabet.NairabetPageNavigator;
 import com.ercross.arbitrageur.model.Arbitrage;
+import com.ercross.arbitrageur.util.NameReplacer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import com.ercross.arbitrageur.controller.fetchers.EventsFetcher;
-import com.ercross.arbitrageur.controller.fetchers.NairabetMarketsFetcher;
+import com.ercross.arbitrageur.fetcher.EventsFetcher;
+import com.ercross.arbitrageur.fetcher.bookmaker.nairabet.NairabetMarketsFetcher;
 import com.ercross.arbitrageur.model.Event;
 import com.ercross.arbitrageur.model.Event.SportType;
 
@@ -25,20 +28,23 @@ public class Main {
     private static final Logger LOG = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        LOG.info("Initializing SportArbitrageur web server...");
-        List<Event> events;
-        initAllStaticRegexMap();
-        final Map<String, WebDriver> drivers = initAllDrivers();
-        final ExecutorService executorService = Executors.newFixedThreadPool(2);
-
-
         while (true) {
-            LocalDate tomorrowsDate = LocalDate.now().plusDays(1);
-            events = fetchEvents(executorService, drivers, tomorrowsDate);
-            while (!events.isEmpty()) {
-                findArbitrageOnEachEvent(executorService, events, drivers);
+            LOG.info("Initializing SportArbitrageur web server...");
+            List<Event> events;
+            initAllStaticRegexMap();
+            NameReplacer.loadAllMapperFilesIntoMemory();
+            final Map<String, WebDriver> drivers = loadAllDrivers();
+            final ExecutorService executorService = Executors.newFixedThreadPool(2);
+
+
+            while (true) {
+                LocalDate tomorrowsDate = LocalDate.now().plusDays(1);
+                events = fetchEvents(executorService, drivers, tomorrowsDate);
+                while (!events.isEmpty()) {
+                    findArbitrageOnEachEvent(executorService, events, drivers);
+                }
+                clearAllUrlTrees();
             }
-            clearAllUrlTrees();
         }
     }
 
@@ -50,8 +56,8 @@ public class Main {
     //clearing all url trees in case any bookmaker makes a modification to site directories
     private static void clearAllUrlTrees() {
         try {
-            Fetchable.reloadUrlTree(Bet9jaMarketsFetcher.urlTree, Bet9jaMarketsFetcher.ROOT_NODE_KEY, Bet9jaMarketsFetcher.ROOT_NODE_VALUE);
-            Fetchable.reloadUrlTree(NairabetMarketsFetcher.urlTree, NairabetMarketsFetcher.ROOT_NODE_KEY, NairabetMarketsFetcher.ROOT_NODE_VALUE);
+            Fetchable.reloadUrlTree(Bet9jaPageNavigator.urlTree, Bet9jaPageNavigator.ROOT_NODE_KEY, Bet9jaPageNavigator.ROOT_NODE_VALUE);
+            Fetchable.reloadUrlTree(NairabetPageNavigator.urlTree, NairabetPageNavigator.ROOT_NODE_KEY, NairabetPageNavigator.ROOT_NODE_VALUE);
         } catch (NodeNotFoundException e) {
             LOG.error("Error encountered while reloading a urlTree" + e);
         }
@@ -87,17 +93,18 @@ public class Main {
         Bet9jaMarketsFetcher.initRegexMap();
     }
 
-    private static Map<String, WebDriver> initAllDrivers() {
-        Map<String, WebDriver> drivers = new HashMap<String, WebDriver>();
-
-        WebDriver bet9jaDriver = Bet9jaMarketsFetcher.initializeDriver();
-        WebDriver nairabetDriver = NairabetMarketsFetcher.initializeDriver();
-        WebDriver flashscoreDriver = EventsFetcher.initializeDriver();
+    //This method is used to maintain a single instance of driver for each bookmaker
+    //This implementation should only be changed if more than one event would be processed at a time
+    private static Map<String, WebDriver> loadAllDrivers () {
+        Map<String, WebDriver> drivers = new HashMap<>();
+        Main main = new Main();
+        final WebDriver bet9jaDriver = new Bet9jaMarketsFetcher().initWebDriver();
+        final WebDriver nairabetDriver = new NairabetMarketsFetcher().initWebDriver();
+        final WebDriver flashscoreDriver = new EventsFetcher().initWebDriver();
 
         drivers.put("Bet9jaDriver", bet9jaDriver);
         drivers.put("NairabetDriver", nairabetDriver);
         drivers.put("FlashscoreDriver", flashscoreDriver);
-
         return drivers;
     }
 }

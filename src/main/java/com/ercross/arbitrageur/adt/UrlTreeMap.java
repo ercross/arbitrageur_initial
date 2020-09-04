@@ -26,8 +26,7 @@ public class UrlTreeMap<Key, Value> {
     }
 
     public UrlTreeMap(Key rootNodeKey, Value rootNodeValue) {
-        UrlTreeMapNode<Key, Value> rootNode = new UrlTreeMapNode<Key, Value>(rootNodeKey, rootNodeValue);
-        this.rootNode = rootNode;
+        this.rootNode = new UrlTreeMapNode<>(rootNodeKey, rootNodeValue);
     }
 
     /**
@@ -82,10 +81,10 @@ public class UrlTreeMap<Key, Value> {
      * Uses breath-first search algorithm to check if this instance of UrlTreeMap contains a node having the requiredKey under the sportTypeKey
      * @return true if the node is contained in this instance of UrlTreeMap
      */
-    public boolean isContains (Key sportTypeKey, Key requiredNodeKey) {
+    public boolean contains(Key sportTypeKey, Key requiredNodeKey) {
 
         //Gets the sportType to in order to minimize the requiredKey search runtime. Returns false if the sportTypeKey is not found on tree
-        UrlTreeMapNode<Key, Value> sportTypeNode = new UrlTreeMapNode<Key, Value>();
+        UrlTreeMapNode<Key, Value> sportTypeNode;
         try {
             sportTypeNode = getSportTypeNode(sportTypeKey);
         }
@@ -94,7 +93,7 @@ public class UrlTreeMap<Key, Value> {
         }
 
         //the breadth-first algorithm
-        Queue <UrlTreeMapNode<Key, Value>> queue = new ArrayDeque<UrlTreeMapNode<Key, Value>>();
+        Queue <UrlTreeMapNode<Key, Value>> queue = new ArrayDeque<>();
         queue.add(sportTypeNode);
         UrlTreeMapNode<Key, Value> currentNode;
         while (!(queue.isEmpty())) {
@@ -124,7 +123,7 @@ public class UrlTreeMap<Key, Value> {
     }
 
     private UrlTreeMapNode<Key, Value> getByBreadthFirstSearch(Key startSearchFromThisNode, Key requiredNodeKey) throws NodeNotFoundException {
-        Queue <UrlTreeMapNode<Key, Value>> queue = new ArrayDeque<UrlTreeMapNode<Key, Value>>();
+        Queue <UrlTreeMapNode<Key, Value>> queue = new ArrayDeque<>();
         queue.add(getSportTypeNode(startSearchFromThisNode));
         UrlTreeMapNode<Key, Value> currentNode;
         while(!(queue.isEmpty())) {

@@ -1,0 +1,21 @@
+2020-08-03 18:49:51,473 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-08-03 18:51:21,293 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-08-03 19:01:45,637 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: Unable to communicate with Browser
+ 	 2020-08-03 19:08:22,379 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-08-03 19:08:22,555 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-08-03 19:08:22,583 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 2020-08-03 19:11:00,094 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-08-03 19:11:00,161 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: soccer element not found on homepageorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[a[span[contains(text(),'FOOTBALL')]]]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ercross-HP', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.NH043g}, goog:chromeOptions: {debuggerAddress: localhost:32975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b8a02da9126eddd06c34639d9fd5a26e
+*** Element info: {Using=xpath, value=//div[a[span[contains(text(),'FOOTBALL')]]]}
+ 	 2020-08-03 19:11:00,198 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 2020-08-03 19:12:00,946 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Attempting to click on soccer
+ 	 2020-08-03 19:12:01,084 	 INFO 	 NairabetMarketsFetcher [main] 	 Nairabet: Now on soccer page
+ 	 2020-08-03 19:12:01,267 	 ERROR 	 NairabetMarketsFetcher [main] 	 Nairabet: This element was not found
+ 	 
